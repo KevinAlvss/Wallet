@@ -11,12 +11,44 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.div`
+  display:flex;
+  align-items:center;
+ 
   width:100%;
   height:103px;
 
   background-color:var(--verde-primario);
 
-  border-bottom-left-radius:16px;
-  border-bottom-right-radius:16px;
+  padding-left:70px;
 
+`;
+
+
+export const Greetings = styled.div`
+
+  height: fit-content;
+
+  > h1{
+    font-size:40px;
+    line-height:100%;
+  }
+
+  > p {
+    color:var(--branco);
+    font-size:20px;
+  }
+
+`;
+
+export const UserName = styled.span`
+   font-weight:bold;
+`;
+
+export const Content = styled.div`
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+
+  height: 100%;
+  width:100%;
 `;

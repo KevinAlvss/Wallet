@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Layout from './layout';
+import Routes from './routes';
 
 import {Global} from './styles/global.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Layout />
+    <Routes />
     <Global/>
   </React.StrictMode>,
   document.getElementById('root')
