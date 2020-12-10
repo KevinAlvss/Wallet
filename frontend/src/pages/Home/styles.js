@@ -52,3 +52,21 @@ export const Content = styled.div`
   height: 100%;
   width:100%;
 `;
+
+export const ConteudoBox = styled.div`
+   width:100%;
+   height:100%;
+   display:flex;
+   flex-direction:column;
+
+   > h2{
+     color:unset;
+     font-weight:500;
+   }
+`;
+
+export const CardsBox = styled.div`
+   display:flex;
+   flex-direction:column;
+   flex-grow:1;
+`;
