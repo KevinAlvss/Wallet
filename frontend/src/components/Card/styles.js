@@ -12,7 +12,9 @@ export const Container = styled.div`
   padding:0 15px;
   margin:5px 0;
 
-  background-color: #16BFC4;
+  flex-shrink:0;
+
+  background-color: ${props => props.cor} ; 
 
    > * {
       color:var(--branco);

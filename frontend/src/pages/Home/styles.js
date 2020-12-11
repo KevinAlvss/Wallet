@@ -68,5 +68,13 @@ export const ConteudoBox = styled.div`
 export const CardsBox = styled.div`
    display:flex;
    flex-direction:column;
-   flex-grow:1;
+   align-items:center;
+   height:90%;
+
+   overflow-y:scroll;
+   overflow-x:hidden;
+
+   ::-webkit-scrollbar{
+     display:none;
+   }
 `;

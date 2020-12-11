@@ -1,15 +1,13 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container } from './styles'
 
 function Card(props) {
 
-  console.log(props.backgroundcolor)
-
   return (
-      <Container>
+      <Container cor={props.cor}>
           <h4>{props.titulo}</h4>
-          <span>{props.valor}</span>
+          <span>{props.valor + " R$"}</span>
       </Container>
   );
 }

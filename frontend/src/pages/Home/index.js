@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {PieChart, Pie, Tooltip} from 'recharts';
+
 import ContentBox from '../../components/ContentBox';
 import Card from '../../components/Card';
 
@@ -14,6 +16,13 @@ import {Container,
 
 
 function Home() {
+
+  const gastos = [
+    { name: 'Group A', value: 400 }, { name: 'Group B', value: 300 },
+    { name: 'Group C', value: 300 }, { name: 'Group D', value: 200 },
+    { name: 'Group E', value: 278 }, { name: 'Group F', value: 189 },
+  ];
+
   return (
     <Container>
 
@@ -31,9 +40,17 @@ function Home() {
           <ConteudoBox>          
             <h2>Suas rendas</h2>
             <CardsBox>
+
               <Card 
                 titulo="Salário"
-                valor="4.000 R$"
+                valor="4.000"
+                cor='#16BFC4'
+              />
+
+              <Card 
+                titulo="Aula de guitarra"
+                valor="200"
+                cor="#f00"
               />
             </CardsBox>
           </ConteudoBox>
@@ -42,7 +59,12 @@ function Home() {
         <ContentBox>
         <ConteudoBox>          
             <h2>Seus gastos</h2>
+            <p>Esse mês: <strong>1.667R$</strong></p>
             <CardsBox>
+            <PieChart width={400} height={400}>
+              <Pie dataKey="value" isAnimationActive={false} data={gastos} cx={200} cy={200} outerRadius={80} fill="#8884d8" label />
+              <Tooltip />
+            </PieChart>
             </CardsBox>
           </ConteudoBox>
         </ContentBox>
