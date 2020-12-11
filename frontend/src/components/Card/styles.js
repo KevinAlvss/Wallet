@@ -14,7 +14,7 @@ export const Container = styled.div`
 
   flex-shrink:0;
 
-  background-color: ${props => props.cor} ; 
+  background-color: ${props => props.cor || props.gasto === true ? props.cor : "#f00"} ; 
 
    > * {
       color:var(--branco);

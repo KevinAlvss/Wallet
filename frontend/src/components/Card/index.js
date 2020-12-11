@@ -7,7 +7,7 @@ function Card(props) {
   return (
       <Container cor={props.cor}>
           <h4>{props.titulo}</h4>
-          <span>{props.valor + " R$"}</span>
+          <span>{ props.gasto === true ? "-" + props.valor + " R$" : props.valor + " R$" }</span>
       </Container>
   );
 }

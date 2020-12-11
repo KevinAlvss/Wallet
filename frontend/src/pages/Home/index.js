@@ -50,7 +50,7 @@ function Home() {
               <Card 
                 titulo="Aula de guitarra"
                 valor="200"
-                cor="#f00"
+                cor="#0ff"
               />
             </CardsBox>
           </ConteudoBox>
@@ -73,6 +73,17 @@ function Home() {
         <ConteudoBox>          
             <h2>Últimos gastos</h2>
             <CardsBox>
+              <Card 
+                titulo="Pedal novo"
+                valor="750"
+                gasto= {true}
+              />
+
+              <Card 
+                titulo="Conta de luz"
+                valor="200"
+                gasto={true}
+              />
             </CardsBox>
           </ConteudoBox>
         </ContentBox>
